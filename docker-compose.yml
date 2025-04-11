@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    container_name: my_postgres_db
+    environment:
+      POSTGRES_DB: aviona
+      POSTGRES_USER: aviona_user
+      POSTGRES_PASSWORD: aviona_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - springboot-network
+
+volumes:
+  postgres_data:
+
+networks:
+  springboot-network:

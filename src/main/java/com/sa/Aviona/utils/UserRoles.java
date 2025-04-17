@@ -1,6 +1,6 @@
 package com.sa.Aviona.utils;
 
-public enum UserRole {
+public enum UserRoles {
     ADMIN,
-    USER
+    CUSTOMER
 }

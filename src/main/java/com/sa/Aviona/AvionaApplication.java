@@ -23,7 +23,6 @@ public class AvionaApplication {
 					.phoneNumber("9999999999")
 					.roleId(1L)
 					.build());
-
 			userRepository.save(User.builder()
 					.name("Sahil")
 					.email("sahil@blabla.com")
